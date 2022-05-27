@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main (){
+	/*int num;
+	
+	printf ("Digite um numero: ");
+	scanf ("%d", &num);
+	
+	printf ("O quadrado de %d e': %d", num, num*num);
+	
+	return 0;*/
+	
+	/*int num, x, y,soma, mult, quad;
+	
+	printf ("Informe o primeiro n'umero: ");
+	scanf ("%d", &x);
+	printf ("Informe o segundo n'umero: ");
+	scanf ("%d", &y);
+	
+	soma = x + y;
+	quad = x * x;
+	mult = soma * quad;
+	
+	printf ("O resultado da soma e' :%d\n",soma); 
+	printf ("O resultado do quadrado do primeiro e': %d\n",quad); 
+	printf ("O resultado final e':%d",mult);*/
+	
+	 /* int num, x, y,calc;
+	
+	printf ("Informe o primeiro n'umero: ");
+	scanf ("%d", &x);
+	printf ("Informe o segundo n'umero: ");
+	scanf ("%d", &y);
+	
+	calc = (x + y) * x * x ;
+	printf ("O resultado final e':%d",calc);
+	
+	return 0; */
+
+}
