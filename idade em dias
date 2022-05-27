@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main (){
+	int anos, mes, dias, idade_atual;
+	
+	printf ("\nInforme o dia em que voce nasceu: ");
+	scanf ("%d", &dias);
+		
+	printf ("\nInforme o mes em que voce nasceu: ");
+	scanf ("%d", &mes);
+	
+		
+	printf ("\nInforme o ano em que voce nasceu: ");
+	scanf ("%d", &anos);
+	
+	dias = dias;
+	mes = mes *30;
+	anos = anos * 365;
+	
+	idade_atual = dias + mes + anos;
+	
+	printf("Voce tem: %d dias ", idade_atual );		
+}
