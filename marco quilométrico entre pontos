@@ -1,0 +1,25 @@
+ 	#include <stdio.h>
+  int main (){
+	int m_a, m_b;
+	float dista;
+	
+	printf ("Informe as Quilometragens em ordem DECRESCENTE\n");
+	printf ("\nInforme o Marco A:");
+	scanf ("%d", &m_a);
+	
+	printf ("\nInforme o Marco B:");
+	scanf ("%d", &m_b);
+	
+
+	
+	dista = m_a - m_b;
+	printf ("\nA distancia entre os marco A e B e de: %.2f \n", dista);
+	
+	
+	printf("O tempo decorrido em 40 km/h foi de: %.2f\n", dista/40);
+	printf("O tempo decorrido em 50 km/h foi de: %.2f\n", dista/50);		
+	printf("O tempo decorrido em 60 km/h foi de: %.2f\n", dista/60);
+	printf("O tempo decorrido em 70 km/h foi de: %.2f\n", dista/70);
+	printf("O tempo decorrido em 80 km/h foi de: %.2f\n", dista/80);
+	
+}
