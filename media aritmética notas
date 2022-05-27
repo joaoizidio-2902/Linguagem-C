@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+ int main()
+	
+	{
+	float p1, p2, nf;
+	printf ("Informe a nota 1: ");
+	scanf ("%f", &p1);
+	printf ("Informe a nota 2");
+	scanf ("%f", &p2);
+	printf ("\nNota Final: %.2f", p1 + p2 / 2);
+	return 0;
+	}
