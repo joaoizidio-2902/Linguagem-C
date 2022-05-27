@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main (){
+	float ipi,codp1, codp2, valorp1, valorp2, quantp1, quantp2, valorp, form, soma;
+	
+	printf ("n\Informe a procentagem IPI: ");
+	scanf ("%f", &ipi);
+	
+	printf ("\nInforme o codigo da peca 1: ");
+	scanf ("%f", &codp1);
+	
+	printf ("\nInforme o codigo da peca 2: ");
+	scanf ("%f", &codp2);
+	
+	printf ("\nInforme a quantidade de pecas 1: ");
+	scanf ("%f", &quantp1);
+		
+	printf ("\nInforme a quantidade de pecas 2: ");
+	scanf ("%f", &quantp2);
+	
+	printf("\nInforme o valor da peca 1: ");
+	scanf("%f", &valorp1);
+	
+	printf("\nInforme o valor da peca 2: ");
+	scanf("%f", &valorp2);
+	
+ 	form = (((valorp1 * quantp1) + (valorp2 * quantp2)) * ( ipi / 100 + 1 ));
+ 	valorp = ( valorp1 * quantp1 + valorp2 * quantp2);
+ 	soma = (valorp + form);
+ 	
+ 	printf ("\nO valor total das pecas e' de : %.2f", soma);
+		
+}
