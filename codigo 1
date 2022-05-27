@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdio.h>
+//Meu primeiro codigo
+int main (){
+	printf ("Hello World. I'm alive!\n"); 
+	
+	int a = 1; 
+	printf ("%d", a); 
+	return 0;
+	
+}
