@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main (){
+int x, x2;
+char oper;
+printf ("Informe um numero: ");
+scanf ("%d", &x);
+
+printf ("Informe o segundo numero: ");
+scanf ("%d", &x2);
+
+printf ("Escolha a calculadora entre:");
+
+printf (" \n+ Soma \t - Subtracao \n * Multiplicacao \t / Divisao\n %% Resto da Divisao \n");
+scanf ("%c", &oper);
+
+oper = getch();
+switch (oper){
+	case '+':
+		printf ("%d + %d = %d", x, x2, x + x2);
+		break;
+	case '-':
+		printf ("%d - %d = %d", x, x2, x - x2);
+		break;
+		
+	case '*':
+		printf ("%d * %d = %d", x, x2, x * x2);
+		break;	
+	
+	case '/':
+		printf ("%d / %d = %d", x, x2, x / x2);
+		break;
+		
+	case '%':
+		printf ("%d %% %d = %d", x, x2, x % x2);
+		break;
+	default: printf ("Opcao invalida");
+}
+
+
+}
+
