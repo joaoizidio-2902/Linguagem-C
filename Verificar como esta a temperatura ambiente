@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main (){
+	int x;
+	printf ("Informe a temperatura em graus Celcius: ");
+	scanf ("%d", &x);
+	
+	if (x < 18){
+		printf ("Esta frio!");
+	}
+	else if (x >= 18 && x <= 28){
+		printf ("A temperatura esta agradavel");
+	}	
+	else 
+	printf ("Esta quente!");
+  }
+  
