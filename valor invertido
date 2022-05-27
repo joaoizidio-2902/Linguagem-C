@@ -1,0 +1,22 @@
+	#include <stdio.h>
+  int main (){
+
+	int v_inicial, v_temp, milhar, dezena, centena, unidade, v_invertido;
+
+	printf ("Entre com um valor de 4 digitos: ");
+	scanf("%d", &v_inicial);
+
+	v_temp = v_inicial;
+	milhar = v_temp / 1000;
+	v_temp = v_temp % 1000;
+	centena = v_temp / 100;
+	v_temp = v_temp % 100;
+	dezena = v_temp / 10;
+	v_temp = v_temp % 10;
+	unidade = v_temp;
+	v_invertido = unidade * 1000;
+	v_invertido = v_invertido + (dezena * 100);
+	v_invertido = v_invertido + (centena * 10);
+	v_invertido = v_invertido + milhar;
+	printf ("O valor final e': %d", v_invertido);	
+}
