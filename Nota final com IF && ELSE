@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+{
+	float p1, p2; 
+	int nf;
+	printf ("Informe a nota 1: ");
+	scanf ("%f", &p1);
+	printf ("Informe a nota 2:");
+	scanf ("%f", &p2);
+	nf = (p1 + p2) / 2;
+	if (nf >= 6){
+	printf ("NOTA FINAL = %d", nf);
+	printf ("\n\tAprovado");
+	}
+	if (nf >= 4 && nf < 6 ){
+		printf ("NOTA FINAL = %d", nf);
+		printf ("\n\tIFA");
+	}
+	else {
+		printf ("NOTA FINAL = %d", nf);
+		printf ("\n\tReprovado");
+	}
+	
+	return 0;
+}
