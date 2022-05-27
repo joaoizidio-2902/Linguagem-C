@@ -1,0 +1,70 @@
+#include <stdio.h>
+int main (){
+	
+
+	float  p1,p2, p3, nf, tmp ;
+	
+	printf ("Informe a nota 1: ");
+	scanf ("%f", &p1);
+	
+	printf ("Informe a nota 2: ");
+	scanf ("%f", &p2);
+	
+	printf ("Informe a nota 3: ");
+	scanf ("%f", &p3);
+	
+	if (p1 < 0){
+	printf ("Nota invalida!");}
+	else if ( p2 < 0 )
+	printf ("Nota invalida!");
+	else if ( p3 < 0 )
+	printf ("Nota invalida!");
+	else	
+		if (p1 >= p2 && p2 >= p3){
+		
+		nf = (p1 + p2) / 2;
+		if (nf >= 6)
+		printf ("Voce foi aprovado!");
+		if (nf < 4)
+		printf ("Voce foi reprovado");
+		if (nf >= 4 && nf < 6 )
+		printf ("IFA");
+		printf ("\nMenor nota desconsiderada: %.2f", p3);		
+		}
+		else if (p2 >= p1 && p1 >= p3 ){
+			nf = (p2 + p1) / 2;
+			if (nf >= 6)
+			printf ("Voce foi aprovado!");
+			if (nf < 4)
+			printf ("Voce foi reprovado");
+			if (nf >= 4 && nf < 6 )
+			printf ("IFA");
+			printf ("\nMenor nota desconsiderada: %.2f", p3);	
+		}
+	
+		else if (p3 >= p1 && p1 >= p2){
+		
+			nf = (p3 + p1) / 2;
+			if (nf >= 6)
+			printf ("Voce foi aprovado!");
+			if (nf < 4)
+			printf ("Voce foi reprovado");
+			if (nf >= 4 && nf < 6 )
+			printf ("IFA");
+			printf ("\nMenor nota desconsiderada: %.2f", p2);	
+		}
+	
+		else if (p2 >= p1 && p3 >= p2){
+			nf = (p3 + p2) / 2;
+			if (nf >= 6)
+			printf ("Voce foi aprovado!");
+			if (nf < 4)
+			printf ("Voce foi reprovado");
+			if (nf >= 4 && nf < 6 )
+			printf ("IFA");
+			printf ("\nMenor nota desconsiderada: %.2f", p1);	
+		}
+	return 0;
+	
+	
+}
