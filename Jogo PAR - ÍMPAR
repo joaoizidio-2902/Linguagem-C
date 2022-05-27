@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+
+int num_pseudo() //NÃO alterar esta função!
+ {
+ int x;
+ srand(time(NULL));
+ return (rand() % 6); //retorna um numero pseudo-aleatório de 0 a 5
+ } 
+int main (){
+
+	int numU, x, calc;
+	int p;
+	int i;
+	char escolha;
+	
+	
+	srand(time(NULL));
+ 	x = (rand() % 6);
+		
+	printf ("Vamos jogar de PAR ou IMPAR?\n");
+	printf ("Escolha entre [p] para 'PAR' e [i] para 'IMPAR': \n");
+	scanf ("%s", &escolha);
+
+switch (escolha){
+		case 'p':
+			printf (" PAR \n Voce e' PAR e eu sou IMPAR\n");
+			break;
+		case 'i':
+			printf (" IMPAR \n Voce e' IMPAR e eu sou PAR\n");
+			break;
+		default:
+			printf ("Opcao invalida!"); 
+	}
+	printf ("Vamos escolher um numero ao mesmo tempo.\n");
+	printf ("Digite um numero entre [0 - 5]: ");
+	scanf ("%d", &numU);
+	
+	printf ("\nEu escolhi:  %d\n", x);		
+	
+	calc= numU + x;	
+	printf ("\n%d mais %d e' igual a %d.", numU, x, calc);
+	p = calc % 2 == 0;
+	i = calc % 2 != 0; 
+	
+	if (p){
+		printf ("\n%d e' PAR.", calc);}
+	
+	else if (i){
+		printf ("\n%d e' IMPAR.", calc);}
+	
+	/*--------------------------------------*/
+	
+	if (escolha = p)
+		{	
+		printf ("\nVoce ganhou!");
+		}		
+		else { printf ("\nVoce perdeu!");
+		}
+			 if (escolha = i)
+			{ 
+				printf ("\nVoce ganhou!");
+			}
+	
+}
