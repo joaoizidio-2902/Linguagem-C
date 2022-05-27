@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (){
+	
+	/*printf ("Hello World.\n"); // /n pula uma linha
+	printf ("I'm Alive!\n");*/
+	
+	char a, b, c;
+	
+	char nome [10] = "alice";
+	//printf ("%s", nome);
+	
+	printf ("%c", nome[0]-32);
+	printf ("%c", nome[1]);
+	printf ("%c", nome[2]);
+	printf ("%c", nome[3]);
+	printf ("%c", nome[4]);
+	printf ("%c", nome[5]);
+}
