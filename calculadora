@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main (){
+	/*
+	int n=5,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,soma;
+	
+	printf ("Numero para multiplicar:\n");
+	x1 = n * 1;
+	x2 = n * 2;
+	x3 = n * 3;
+	x4 = n * 4;
+	x5 = n * 5;
+	x6 = n * 6;
+	x7 = n * 7;
+	x8 = n * 8;
+	x9 = n * 9;
+	x10 = n * 10;
+	
+	printf ("5 X 1 = %d\n", x1);
+	printf ("5 X 2 = %d\n", x2);
+	printf ("5 X 3 = %d\n", x3);
+	printf ("5 X 4 = %d\n", x4);
+	printf ("5 X 5 = %d\n", x5);
+	printf ("5 X 6 = %d\n", x6);
+	printf ("5 X 7 = %d\n", x7);
+	printf ("5 X 8 = %d\n", x8);
+	printf ("5 X 9 = %d\n", x9);
+	printf ("5 X 10 = %d\n", x10); */
+	
+	int n = 15;
+	printf ("%d X 1 = %d\n", n, n*1); 
+	printf ("%d X 2 = %d\n", n, n*2); 
+	printf ("%d X 3 = %d\n", n, n*3); 
+	printf ("%d X 4 = %d\n", n, n*4); 
+	printf ("%d X 5 = %d\n", n, n*5); 
+	printf ("%d X 6 = %d\n", n, n*6); 
+	printf ("%d X 7 = %d\n", n, n*7); 
+	printf ("%d X 8 = %d\n", n, n*8); 
+	printf ("%d X 9 = %d\n", n, n*9); 
+	printf ("%d X 10 = %d\n", n, n*10); 
+	
+	return 0;
+}
